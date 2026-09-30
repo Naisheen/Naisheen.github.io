@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f7f7fb;
+  color: #222;
+}
+
+header {
+  background: #17172b;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  font-size: 26px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 22px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #e9e5ff, #ffffff);
+}
+
+.hello {
+  font-size: 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin: 5px 0;
+}
+
+.hero h2 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 10px auto 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #17172b;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 75px 25px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 32px;
+}
+
+.card {
+  background: white;
+  padding: 28px;
+  margin: 18px 0;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.skill {
+  background: white;
+  padding: 22px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.project-grid .card {
+  margin: 0;
+}
+
+.contact {
+  text-align: center;
+}
+
+footer {
+  background: #17172b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 750px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 44px;
+  }
+
+  .skills,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
